@@ -3,11 +3,11 @@
   <remote name="github" fetch="https://github.com/" />
 
   <!-- Raspberry Pi -->
-  <project path="device/brcm/rpi4" name="raspberry-vanilla/android_device_brcm_rpi4" remote="github" revision="android-14.0" >
-    <linkfile dest="rpi4-mkimg.sh" src="mkimg.sh" />
+  <project path="device/brcm/rpi4" name="SyborgStudios/android_device_brcm_rpi4" remote="github" revision="android-14.0" >
+    <linkfile src="mkimg.sh" dest="rpi4-mkimg.sh" />
   </project>
-  <project path="device/brcm/rpi5" name="raspberry-vanilla/android_device_brcm_rpi5" remote="github" revision="android-14.0" >
-    <linkfile dest="rpi5-mkimg.sh" src="mkimg.sh" />
+  <project path="device/brcm/rpi5" name="SyborgStudios/android_device_brcm_rpi5" remote="github" revision="android-14.0" >
+    <linkfile src="mkimg.sh" dest="rpi5-mkimg.sh" />
   </project>
   <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="android-14.0" />
   <project path="device/brcm/rpi5-kernel" name="raspberry-vanilla/android_device_brcm_rpi5-kernel" remote="github" revision="android-14.0" />
@@ -66,4 +66,10 @@
   <project path="external/wpa_supplicant_8" name="raspberry-vanilla/android_external_wpa_supplicant_8" remote="github" revision="android-14.0" />
   <project path="packages/modules/Wifi" name="raspberry-vanilla/android_packages_modules_Wifi" remote="github" revision="android-14.0" />
 
+  <!--Patches-->
+  <project path="rockebilly_rpi_patches" name="SyborgStudios/rockebilly_rpi_patches" remote="github" revision="main" />
+
+  <!--Rockebilly App-->
+  <project path="packages/apps/Rockebilly" name="SyborgStudios/rockebilly_apk" remote="github" revision="main" />
+  
 </manifest>
